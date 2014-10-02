@@ -1,5 +1,5 @@
-docker-ubuntu-jdk7
-==================
+docker-jenkins
+==============
 Docker container with Jenkins service based on [sath89/jdk7](https://registry.hub.docker.com/u/sath89/ubuntu_jdk7/)
 
 Usage:
