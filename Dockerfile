@@ -14,7 +14,7 @@ RUN useradd -m -u 505 -g 505 -d $JENKINS_HOME jenkins
 RUN chown -R jenkins:jenkins $JENKINS_HOME && chown -R jenkins:jenkins /opt/jenkins
 RUN wget -q -O /opt/jenkins/jenkins.war http://mirrors.jenkins-ci.org/war/latest/jenkins.war
 USER jenkins
-CMD exec java -jar $JENKINS_HOME/../jenkins.war --prefix=$JENKINS_PREFIX
+CMD exec java $JAVA_ARGS -jar $JENKINS_HOME/../jenkins.war --prefix=$JENKINS_PREFIX
 
 EXPOSE 50000/tcp
 EXPOSE 8080/tcp
